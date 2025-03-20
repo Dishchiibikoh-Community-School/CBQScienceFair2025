@@ -169,17 +169,35 @@
     
     /* Header */
     header {
-      padding: 150px 0 80px;
-      text-align: center;
-      background: linear-gradient(135deg, var(--sky-blue) 0%, var(--deep-blue) 100%);
-      color: var(--white);
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      height: auto;
+      margin-top: 100px;
       margin-bottom: 50px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
+    header::before {
+      display: none;
+    }
+
+    header {
+      background: none;
+    }
+
     .header-content {
-      max-width: 800px;
+      width: 100%;
+      max-width: 1200px;
       margin: 0 auto;
+    }
+
+    .header-content img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
     }
     
     .animate-title {
@@ -587,6 +605,7 @@
       </div>
       <ul class="nav-links">
         <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#schedule" class="nav-link">Schedule</a></li>
         <li><a href="#venue" class="nav-link">Venue</a></li>
         <li><a href="#objectives" class="nav-link">Objectives</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
@@ -602,9 +621,7 @@
   <!-- Header -->
   <header id="home">
     <div class="container header-content">
-      <h1 class="animate-title"> Science Fair 2025</h1>
-      <p class="header-subtitle">Dishchii'bikoh Community School</p>
-      <a href="#schedule" class="btn">View Schedule</a>
+      <img src="Science_Fair.png" alt="Science Fair Banner">
     </div>
   </header>
 
